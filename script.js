@@ -1,4 +1,3 @@
-// Write your JavaScript code here!
 window.addEventListener("load", function() {
       fetch("https://handlers.education.launchcode.org/static/planets.json").then( function(response) {
          response.json().then( function(json) {
@@ -92,13 +91,11 @@ window.addEventListener("load", function() {
             checkReady = false;
          }
          if (checkReady){
-            //defaultValues();
             falutyItemsReady.style.visibility = "hidden";
             launchStatusReady.innerHTML = 'Shuttle ready for launch';
             launchStatusReady.style.color = "green";
             assignment();
             event.preventDefault();
-            //checkReady = false;
          } else {
             assignment();
             checkReady = true;
